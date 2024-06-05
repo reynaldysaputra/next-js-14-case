@@ -17,7 +17,6 @@ function Case2({
 
       <ErrorBoundary fallback={<ErrorMovies />}>
         <Suspense fallback={<h3>Loading...</h3>}>
-          {/* @ts-expect-error Server Component */}
           <Movies searchTextMovie={searchTextMovie} />
         </Suspense>  
       </ErrorBoundary> 
